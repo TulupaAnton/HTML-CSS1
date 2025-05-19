@@ -1,0 +1,508 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  width: 100%;
+  height: 70vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #d64200;
+  display: flex;
+  flex: 0 0 200px;
+  width: 100%;
+  max-height: 214px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.header .title {
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 181.8%;
+  letter-spacing: 2%;
+  text-align: center;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px 0 0 15px;
+  border-radius: 2px;
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.form-container .firstGroup,
+.form-container .secondGroup,
+.form-container .fourthGroup,
+.form-container .fifthGroup {
+  width: 93%;
+}
+.form-container .thirdGroup {
+  width: 96.5%;
+  grid-column: span 2;
+}
+.form-container .first-label,
+.form-container .last-label,
+.form-container .email-label,
+.form-container .password-label,
+.form-container .confirm-label {
+  color: rgb(214, 66, 0);
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: -0.41px;
+  text-align: left;
+  padding: 4%;
+}
+.form-container .email-label {
+  padding: 0;
+  padding-left: 2%;
+}
+.form-container .fourthInput {
+  border: 1px solid #009745;
+  font-family: Arial;
+  color: rgb(214, 66, 0);
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.form-container .fourthInput::placeholder {
+  color: green;
+  opacity: 1;
+}
+.form-container .fifthInput {
+  border: 1px solid rgb(235, 87, 87);
+  font-family: Arial;
+  color: rgb(214, 66, 0);
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.form-container .fifthInput::placeholder {
+  color: red;
+  opacity: 1;
+}
+.form-container .firstInput,
+.form-container .secondtInput,
+.form-container .thirdInput {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  outline: none;
+  appearance: none;
+  border: 1px solid #ccc;
+}
+.form-container .firstInput:focus,
+.form-container .secondtInput:focus,
+.form-container .thirdInput:focus {
+  border-color: #d64200;
+  box-shadow: 0 0 4px rgba(255, 69, 0, 0.6);
+}
+
+::placeholder {
+  padding-left: 2%;
+}
+
+.gender-hobbies-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px 50px 20px;
+  max-width: 90%;
+  padding: 0.3%;
+}
+
+.gender-hobbies-container .group,
+.gender-hobbies-container .groupH {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 45%;
+}
+
+.gender-hobbies-container .group-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(214, 66, 0);
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.gender-hobbies-container .optionsGrid-container {
+  display: flex;
+  gap: 110px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gender-hobbies-container .option {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: black;
+}
+
+.gender-hobbies-container input[type=radio],
+.gender-hobbies-container input[type=checkbox] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-right: 5px;
+  position: relative;
+}
+
+.gender-hobbies-container input[type=radio]:checked,
+.gender-hobbies-container input[type=checkbox]:checked {
+  background-color: #d64200;
+  border-color: #d64200;
+}
+
+.gender-hobbies-container input[type=radio]:checked::after,
+.gender-hobbies-container input[type=checkbox]:checked::after {
+  content: "✔";
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 10500px;
+  margin: 20px 0 0 25px;
+}
+.container .Source {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container .Source .sourceOfInc {
+  color: rgb(214, 66, 0);
+  font-weight: bold;
+  padding: 0 0 10px 28px;
+}
+.container .Source .select {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  color: black;
+  width: 90%;
+  background-color: transparent;
+}
+.container .income {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  /* Шлейф */
+  /* Ползунок */
+}
+.container .income .income-source {
+  color: rgb(214, 66, 0);
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 4%;
+}
+.container .income .income-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 4%;
+  width: 80%;
+}
+.container .income #income {
+  width: 70%;
+  transform: rotate(0deg);
+}
+.container .income input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: transparent;
+  margin: 10px 0;
+}
+.container .income input[type=range]::-webkit-slider-runnable-track {
+  background: #d25b35;
+  height: 8px;
+  border-radius: 5px;
+}
+.container .income input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+}
+.container .income .income-value-container {
+  font-weight: bold;
+  color: white;
+  background-color: rgb(214, 66, 0);
+  padding: 10px 15px;
+  margin-left: 50px;
+  border-radius: 10px;
+  min-width: 94px;
+  text-align: center;
+}
+
+.file-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 25px;
+  font-family: Arial, sans-serif;
+}
+.file-wrapper .choose-cont {
+  display: flex;
+  align-items: center;
+}
+.file-wrapper .file-label {
+  color: rgb(214, 66, 0);
+  font-size: 16px;
+  padding-left: 1.5%;
+  font-weight: bold;
+}
+.file-wrapper .file-container {
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  max-height: auto;
+  justify-content: space-between;
+}
+.file-wrapper .file-container .file-btn {
+  width: 250px;
+  background-color: grey;
+  color: white;
+  padding: 15px 0px;
+  flex-wrap: wrap;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 16px 24px 0px rgba(50, 50, 71, 0.08), 0px 12px 12px 0px rgba(50, 50, 71, 0.08);
+}
+.file-wrapper .file-container .file-name {
+  flex-wrap: nowrap !important;
+  width: 60%;
+  margin-left: 8px;
+  color: black;
+}
+.file-wrapper .file-container .file-input {
+  display: none;
+}
+.file-wrapper .file-container .age-container {
+  width: 44%;
+  padding: 12px;
+  max-width: 100%;
+}
+.file-wrapper .file-container .age-container .age-label {
+  color: rgb(214, 66, 0);
+  font-size: 16px;
+  font-weight: bold;
+  margin: 40px;
+}
+.file-wrapper .file-container .age-container .ageInput {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+  appearance: none;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.file-wrapper .file-container .age-container .ageInput:focus {
+  border-color: #d64200;
+  box-shadow: 0 0 4px rgba(255, 69, 0, 0.6);
+}
+
+.bio-container {
+  display: flex;
+  width: 92vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 0 0 40px;
+  font-family: Arial, sans-serif;
+}
+.bio-container .bio-label {
+  padding-left: 2%;
+  color: rgb(214, 66, 0);
+  font-size: 16px;
+  max-width: 100%;
+  font-weight: bold;
+}
+.bio-container .tell-bio {
+  width: 100%;
+}
+.bio-container .text {
+  width: 100%;
+  max-width: 1770px;
+  height: 157px;
+  border-radius: 10px;
+  resize: vertical;
+}
+.bio-container ::placeholder {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 80px;
+  margin-right: 40px;
+}
+.btn .style-btn {
+  width: 100%;
+  max-width: 327px;
+  height: 60px;
+  background-color: rgb(214, 66, 0);
+  border-radius: 10px;
+  text-align: center;
+  padding: 23px 0 0 0;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1050px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100vw;
+  }
+  .form-container .thirdGroup {
+    width: 93%;
+  }
+  .Source .select {
+    width: 80%;
+  }
+  .Source .income-source {
+    padding-left: 40px;
+  }
+  .gender-hobbies-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 95vw;
+    margin: 0;
+    padding: 0 30px;
+    flex-wrap: nowrap;
+  }
+  .gender-hobbies-container .gender-hobbies-container,
+  .gender-hobbies-container .gender-hobbies-container {
+    width: 90vw;
+  }
+  .gender-hobbies-container .group {
+    width: 85vw;
+  }
+  .gender-hobbies-container .groupH {
+    width: 85vw;
+  }
+  .gender-hobbies-container .optionsGrid-container {
+    gap: 0;
+    gap: 30px;
+  }
+  .gender-hobbies-container .gender-hobbies-container .groupH .optionsGrid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца */
+    gap: 10px 10px;
+    width: 100%;
+  }
+  .gender-hobbies-container .gender-hobbies-container .group .optionsGrid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .file-wrapper {
+    height: auto;
+    align-items: 0;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .file-wrapper .file-container {
+    flex-direction: column;
+    align-items: unset;
+    width: 100%;
+  }
+  .file-wrapper .file-btn {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .file-wrapper .age-label {
+    margin-top: 20px;
+  }
+  .file-wrapper .age-input {
+    margin-right: 0;
+    width: 90vw;
+  }
+  .file-wrapper .age-container {
+    width: 0;
+    margin: 0;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0;
+  }
+  .bio-container {
+    width: 98%;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  .btn {
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML/CSS1.3</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Create Account</h1>
+    </header>
+    <form class="form-container">
+      <div class="firstGroup">
+        <label for="first-name" class="first-label">First name*</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          class="firstInput"
+          placeholder="Enter your first name"
+          required
+        />
+      </div>
+      <div class="secondGroup">
+        <label for="first-name" class="last-label">Last name*</label>
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          class="secondtInput"
+          placeholder="Enter your last name"
+          required
+        />
+      </div>
+      <div class="thirdGroup">
+        <label for="email" class="email-label">Email*</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          class="thirdInput"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="fourthGroup">
+        <label for="password" class="password-label">Password*</label>
+        <input
+          type="text"
+          id="password"
+          name="password"
+          class="fourthInput"
+          placeholder="*************"
+          required
+        />
+      </div>
+      <div class="fifthGroup">
+        <label for="confPass" class="confirm-label">Comfirm Password*</label>
+        <input
+          type="text"
+          id="password"
+          name="
+          password"
+          class="fifthInput"
+          placeholder="Enter correct your confirm password"
+          required
+        />
+      </div>
+    </form>
+    <form class="gender-hobbies-container">
+      <div class="group">
+        <div class="group-title">Gender</div>
+        <div class="optionsGrid-container">
+          <label class="option">
+            <input type="radio" name="gender" value="male" checked />
+            Male
+          </label>
+          <label class="option">
+            <input type="radio" name="gender" value="female" />
+            Female
+          </label>
+        </div>
+      </div>
+
+      <div class="groupH">
+        <div class="group-title">Hobbies</div>
+        <div class="optionsGrid-container">
+          <label class="option">
+            <input type="checkbox" name="hobby" value="music" />
+            Music
+          </label>
+          <label class="option">
+            <input type="checkbox" name="hobby" value="sports" checked />
+            Sports
+          </label>
+          <label class="option">
+            <input type="checkbox" name="hobby" value="travel" />
+            Travel
+          </label>
+          <label class="option">
+            <input type="checkbox" name="hobby" value="movies" checked />
+            Movies
+          </label>
+        </div>
+      </div>
+    </form>
+
+    <div class="container">
+      <div class="Source">
+        <div class="sourceOfInc">Source of Income</div>
+        <select class="select" id="source">
+          <option value="value1" selected>Employed</option>
+        </select>
+      </div>
+      <div class="income">
+        <div class="income-source">Income</div>
+        <div class="income-wrapper">
+          <input type="range" id="income" min="0" max="50" value="20" />
+          <div class="income-value-container" id="incomeValue">20K</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="file-wrapper">
+      <label class="file-label">Upload Profile Picture</label>
+      <div class="file-container">
+        <div class="choose-cont">
+          <label class="file-btn">
+            Choose File
+            <input type="file" class="file-input" />
+          </label>
+          <div class="file-name">No file chosen</div>
+        </div>
+        <div class="age-container">
+          <label class="age-label">Age</label>
+          <div class="age-input">
+            <input type="text" class="ageInput" placeholder="18" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bio-container">
+      <label class="bio-label">Bio</label>
+      <div class="tell-bio">
+        <textarea
+          class="text"
+          id="bio"
+          placeholder="Tell about yourself"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="btn"><div class="style-btn">Create</div></div>
+  </body>
+</html>
